@@ -149,13 +149,20 @@ export default function VotingScreen({
             </div>
           )}
 
-          <div className="grid grid-cols-2 gap-2">
-            <Button
+          <div className="grid grid-cols-1 gap-2">
+          <Button
               variant="outline"
               className="h-12 bg-white border-2 border-red-500 text-red-500 hover:bg-red-50"
               onClick={handleClear}
             >
-              <X className="mr-2 h-4 w-4" /> CORRIGE
+              <X className="h-4 w-4" /> APAGAR
+            </Button>
+            <Button
+              variant="outline"
+              className="h-12 bg-white border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-50"
+              onClick={handleClear}
+            >
+              <X className="h-4 w-4" /> CORRIGE
             </Button>
             <Button
               variant="outline"
@@ -163,7 +170,7 @@ export default function VotingScreen({
               onClick={onConfirm}
               disabled={!showCandidateInfo}
             >
-              <Check className="mr-2 h-4 w-4" /> CONFIRMA
+              <Check className=" h-4 w-4" /> CONFIRMA
             </Button>
           </div>
         </div>
